@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>
+            Assignment 1
+        </title>
+    </head>
+    <body>
+        <h1>Assignment 1 - All about HTML</h1>
+
+        <a href='../../index.html'>Back Home</a>
+
+        <h2>Forms</h2>
+        <form>
+            Username:
+            <input type="text" title="Enter your username" placeholder="J Doe" value="">
+            <br>
+            Password:
+            <input type="password" placeholder="Password">
+            <br>
+            Phone Number:
+            <input type="number" min="1000000000" max="9999999999" placeholder="(123)-456-7890">
+            <br>
+            Date:
+            <input type="date">
+            <br>
+
+            <div>
+                <input id='book-1' type='radio' name='fav-book' value='Book 1'>
+                <label for='book-1'>Book 1</label><br>
+
+                <input id='book-2' type='radio' name='fav-book' value='Book 2'>
+                <label for='book-2'>Book 2</label><br>
+
+                <input id='book-3' type='radio' name='fav-book' value='Book 3' checked='True'>
+                <label for='book-3'>Book 3</label><br>
+
+                <label>
+                    <input id='book-4' type='radio' name='fav-book' value='Book 4'>
+                    Book 4
+                </label>
+            </div>
+            <div>
+                <input type='checkbox' name='fav-genre' value='Genre 1'>Genre 1 
+                <input type='checkbox' name='fav-genre' value='Genre 2'>Genre 2 
+                <input type='checkbox' name='fav-genre' value='Genre 3'>Genre 3 
+                <input type='checkbox' name='fav-genre' value='Genre 4' checked="True">Genre 4 
+            </div>
+            <div>
+                <select style="width: 200px">
+                    <option>Option 1</option>
+                    <option selected="True">Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </select>
+            </div>
+            <div>
+                <label for='slider'>Move the slider!</label>
+                <input type='range' name='slider' min='1' max='100'>
+            </div>
+            Buttons:
+            <button>Click me</button>
+            <button type="reset">Reset</button>
+        </form>
+
+        <h2>Headings</h2>
+        <h2>Paragraphs</h2>
+        <p>
+            Paragraph 1.
+        </p>
+        <p>
+            Paragraph 2.
+        </p>
+        <p>
+            Paragraph 3.
+        </p>
+        <h2>Lists</h2>
+        <ol>
+            <li>Book 1</li>
+            <ul>
+                <li>The plot of the book</li>
+                <li>The characters in the book</li>
+                <li>The ending of the book</li>
+            </ul>
+            <li>Book 2</li>
+            <li>Book 3</li>
+        </ol>
+        <h2>Links</h2>
+        <a href='''>Links</a>
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                    <th>Heading 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan='2'>Element 1</td>
+                    <td rowspan='2'>Element 2</td>
+                </tr>
+                <tr>
+                    <td>Element 4</td>
+                    <td>Element 5</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
