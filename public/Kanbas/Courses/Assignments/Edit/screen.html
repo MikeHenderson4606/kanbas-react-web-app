@@ -90,46 +90,83 @@
                         </ul>
                     </td>
                     <td style='vertical-align: top'>
+                        <select>
+                            <option disabled selected>Speed Grader</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
                         <form>
-                            <select>
-                                <option disabled selected>Gradebook</option>
+                            <h3>Assignment Name</h3>
+                            <input style='display:block' placeholder='Assignment Name' value='Assignment'> <br>
+                            <textarea style='display:block' placeholder='Assignment Description' value='Assignment Description'></textarea>
+                            <br>
+                            <label style='display:block' for='points'>Points</label>
+                            <input style='display:block' id='points' type='number' value='100'>
+                            <br>
+                            <label style='display:block' for='group'>Assignment Group</label>
+                            <select style='display:block' id='group'>
+                                <option>ASSIGNMENTS</option>
+                                <option>Option 1</option>
                                 <option>Option 2</option>
                                 <option>Option 3</option>
-                                <option>Option 4</option>
                             </select>
-                            <button type='button'>Import</button>
-                            <select value='Export'>
-                                <option disabled selected>Export</option>
+                            <br>
+                            <label style='display:block' for='display-grade'>Display Grade as</label>
+                            <select style='display:block' id='display-grade'>
+                                <option>Percentage</option>
+                                <option>Option 1</option>
                                 <option>Option 2</option>
                                 <option>Option 3</option>
-                                <option>Option 4</option>
                             </select>
-                            <button type='button'>Configure</button>
-                            <h3>Student Names</h3>
-                            <input type='text' placeholder='Search Students'>
-                            <h3>Assignment Names</h3>
-                            <input type='text' placeholder='Search Assignments'>
+                            <br>
+                            <label style='display:block' for='display-grade'>Submission Type</label>
+                            <select style='display:block' id='display-grade'>
+                                <option>Online</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                            <br>
+                            <label style='display:block' for='display-grade'>Online Entry Options</label>
+                            <input type='checkbox' id='option-1'>
+                            <label for='option-1'>Text Entry</label>
+                            <br>
+                            <input type='checkbox' id='option-2'>
+                            <label for='option-2'>Website URL</label>
+                            <br>
+                            <input type='checkbox' id='option-3'>
+                            <label for='option-3'>Media Recordings</label>
+                            <br>
+                            <input type='checkbox' id='option-4'>
+                            <label for='option-4'>Student Annotation</label>
+                            <br>
+                            <input type='checkbox' id='option-5'>
+                            <label for='option-5'>File Uploads</label>
+                            <br>
+                            <div>
+                                <p>Assign</p>
+                                <label for='assign-to'>Assign To</label>
+                                <select style='display:block' id='assign-to'>
+                                    <option>Everyone</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                                <br>
+                                <label for='due-date'>Due</label>
+                                <input style='display:block' type='date' id='due-date'>
+                                <br>
+                                <label for='available-from'>Available From</label>
+                                <input style='display:block' type='date' id='available-from'>
+                                <br>
+                                <label for='until'>Until</label>
+                                <input style='display:block' type='date' id='until'>
+                            </div>
+                            <br>
+                            <button type='button'>Cancel</button>
+                            <button type='button'>Save</button>
                         </form>
-                        <button type='button'>Apply Filters</button>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>Header 1</th>
-                                    <th>Header 2</th>
-                                    <th>Header 3</th>
-                                </tr>
-                                <tr>
-                                    <td>Data 1</td>
-                                    <td>Data 2</td>
-                                    <td>Data 3</td>
-                                </tr>
-                                <tr>
-                                    <td>Data 4</td>
-                                    <td>Data 5</td>
-                                    <td>Data 6</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </td>
                 </tr>
             </tbody>
