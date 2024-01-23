@@ -1,9 +1,167 @@
 <html>
     <head>
-
+        <style>
+            p {
+                background-color: green;
+                color: white;
+            }
+        </style>
+        <link href='index.css' rel='stylesheet'>
     </head>
     <body>
         <h1>Lab 2 - CSS/Bootstrap</h1>
-        <p style='background-color:blue; color: white;'>Some paragraph to be styled.</p>
+        <a href='../../'>Back Home</a>
+        <ol>
+            <li>
+                <div>
+                    <p style='background-color:blue; color: white;'>Some paragraph to be styled. 
+                        This will only affect this specific element since we're using inline style. The default style for 
+                        a paragraph is green background with white text
+                    </p>
+                    <p>For example, this paragraph is not styled and uses the default; green background with white text.</p>
+                    <p id='id-selector1'>This paragraph is using the index.css file to style it. Its id is id-selector1.</p>
+                    <p id='id-selector2'>This paragraph is using the index.css file to style it. Its id is id-selector2.</p>
+                    <p class='class-basic-p'>This an the next paragraph both have the same class - which means they will both use the same style.</p>
+                    <p class='class-basic-p'>This paragraph has the same style as the previous one, because it uses the same class.</p>
+                </div>
+            </li>
+            <li>
+                <div class='wd-selector1'>
+                    <h3>This is a nested css structure (wd-selector1).</h3>
+                    <div class='wd-selector2'>
+                        <h4>This is nested within wd-selector1.</h4>
+                        <p class='wd-selector3'>
+                            This is a paragraph with the class wd-selector3, nested within wd-selector1 and wd-selector2.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3 class='wd-foreground-color-blue'>Colors within text.</h3>
+                    <p class='wd-foreground-color-red'>
+                        This text is red,
+                        <span class='wd-foreground-color-green'>but this text is green.</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3 class='wd-bg-color-blue'>Background colors of text.</h3>
+                    <p class='wd-bg-color-red'> 
+                        This background is red...
+                        <span class='wd-bg-color-green'>But this text is green.</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3 class='wd-border-fat wd-border-solid'>Borders</h3>
+                    <h3 class='wd-border-fat wd-border-solid wd-border-red'>Thick red border</h3>
+                    <h3 class='wd-border-thin wd-border-dashed'>Thin dashed border</h3>
+                    <h3 class='wd-border-thin wd-border-solid wd-border-red'>Thin red solid border</h3>
+                    <h3 class='wd-border-fat wd-border-dashed wd-border-green'>Thick green dashed border</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Padding and Margins</h3>
+                    <div class='wd-background-gray wd-padding-large-top'>
+                        Large top padding.
+                    </div>
+                    <div class='wd-background-lightblue wd-padding-large-bottom'>
+                        Large bottom padding.
+                    </div>
+                    <div class='wd-background-gray wd-padding-large-bottom wd-padding-large-top wd-padding-large-left wd-padding-large-right'>
+                        Large padding all around
+                    </div>
+                    <div class='wd-background-lightblue wd-margin-large-top'>
+                        Large margin on the top. Note this does not affect the size of the element itself.
+                    </div>
+                    <div class='wd-background-lightblue wd-margin-large-left wd-margin-small-top'>
+                        Large margin on the left. Note this does not affect the size of the element itself.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>Rounded Corners</h3>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-top-left wd-margin-small-top'>
+                    Rounded top left border.
+                </div>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-top-right wd-margin-small-top'>
+                    Rounded top right border.
+                </div>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-bottom-left wd-margin-small-top'>
+                    Rounded bottom left border.
+                </div>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-bottom-right wd-margin-small-top'>
+                    Rounded bottom right border.
+                </div>
+            </li>
+            <li>
+                <h3>
+                    Styling dimensions.
+                </h3>
+                <div class='wd-portrait wd-background-gray'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-lightblue'>
+                    This div is landscape.
+                </div>
+                <div class='wd-square wd-background-gray'>
+                    This div is square.
+                </div>
+            </li>
+            <li>
+                <h3>Styling positions</h3>
+                <div class='wd-portrait wd-background-gray'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-lightblue wd-nudge-up-right'>
+                    This div is landscape, moved up and to the right (relative).
+                </div>
+                <div class='wd-square wd-background-gray wd-nudge-down-right'>
+                    This div is square, moved down and to the right (relative).
+                </div>
+                <div class='wd-portrait wd-background-lightblue wd-margin-large-top'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-gray wd-absolute-50-50'>
+                    This div is landscape, moved to an absolute position.
+                </div>
+                <div class='wd-square wd-background-lightblue wd-absolute-100-100'>
+                    This div is square, moved to an absolute position.
+                </div>
+            </li>
+            <li>
+                <h3>Styling z indices</h3>
+                <div class='wd-portrait wd-background-gray wd-z-index-lowest'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-lightblue wd-absolute-75-75  wd-z-index-lowest'>
+                    This div is landscape, moved to some position - layered on the bottom.
+                </div>
+                <div class='wd-square wd-background-gray wd-absolute-150-150 wd-z-index-highest'>
+                    This div is square, moved to some posotion - layered on the top.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Floating Content</h3>
+                    <div class='wd-float-left wd-background-gray'>
+                        Floating Block 1
+                    </div>
+                    <div class='wd-float-left wd-background-lightblue'>
+                        Floating Block 2
+                    </div>
+                    <div class='wd-float-left wd-background-gray'>
+                        Floating Block 3
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>Grid Layout</h3>
+            </li>
+        </ol>
     </body>
 </html>
