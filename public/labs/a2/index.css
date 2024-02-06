@@ -1,0 +1,240 @@
+/* We have an index.css stylesheet which allows us to change the style on the page */
+p#id-selector1 { 
+    background-color: black;
+    color: white;
+}
+
+p#id-selector2 {
+    background-color: orange;
+    color: white;
+}
+
+.class-basic-p {
+    background-color: lightblue;
+    color: black;
+}
+
+.wd-selector1 .wd-selector2 { /* Refers to wd-selector2 being a descendant of wd-selector1 */
+    background-color: red;
+}
+
+.wd-selector1 > .wd-selector2 > .wd-selector3 { /* Refers to wd-selector3 being a direct child of wd-selector2 being a direct child of wd-selector1*/
+    background-color: gray;
+}
+
+.wd-foreground-color-blue {
+    color: blue;
+}
+
+.wd-foreground-color-red {
+    color: red;
+    background-color: white;
+}
+
+.wd-foreground-color-green {
+    color: green;
+}
+
+.wd-bg-color-blue {
+    background-color: blue;
+    color: white;
+}
+
+.wd-bg-color-red {
+    background-color: red;
+}
+
+.wd-bg-color-green {
+    background-color: green;
+}
+
+.wd-border-fat {
+    border-width: 10px 10px 10px 10px;
+}
+
+.wd-border-thin {
+    border-width: 3px 3px 3px 3px;
+}
+
+.wd-border-solid {
+    border-style: solid;
+}
+
+.wd-border-dashed {
+    border-style: dashed;
+}
+
+.wd-border-green {
+    border-color: green;
+}
+
+.wd-border-red {
+    border-color: red;
+}
+
+.wd-background-gray {
+    background-color: gray;
+}
+
+.wd-background-lightblue {
+    background-color: lightblue;
+}
+
+.wd-padding-large-top {
+    padding-top: 50px;
+}
+
+.wd-padding-large-bottom {
+    padding-bottom: 50px;
+}
+
+.wd-padding-large-right {
+    padding-right: 50px;
+}
+
+.wd-padding-large-left {
+    padding-left: 50px;
+}
+
+.wd-margin-large-top {
+    margin-top: 50px;
+}
+
+.wd-margin-small-top {
+    margin-top: 10px;
+}
+
+.wd-margin-large-left {
+    margin-left: 50px;
+}
+
+.wd-border-curved-top-left {
+    border-top-left-radius: 5px;
+}
+
+.wd-border-curved-top-right {
+    border-top-right-radius: 5px;
+}
+
+.wd-border-curved-bottom-left {
+    border-bottom-left-radius: 5px;
+}
+
+.wd-border-curved-bottom-right {
+    border-bottom-right-radius: 5px;
+}
+
+.wd-portrait {
+    width: 150px;
+    height: 250px;
+}
+
+.wd-landscape {
+    width: 250px;
+    height: 150px;
+}
+
+.wd-square {
+    width: 200px;
+    height: 200px;
+}
+
+.wd-nudge-up-right {
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+
+.wd-nudge-down-right {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.wd-absolute-50-50 {
+    position: absolute;
+    top: 2800px;
+    left: 300px;
+}
+
+.wd-absolute-100-100 {
+    position: absolute;
+    top: 2850px;
+    left: 500px;
+}
+
+.wd-absolute-75-75 {
+    position: absolute;
+    top: 3100px;
+    left: 300px;
+}
+
+.wd-absolute-150-150 {
+    position: absolute;
+    top: 3150px;
+    left: 500px;
+}
+
+.wd-z-index-lowest {
+    z-index: 1;
+}
+
+.wd-z-index-intermediate {
+    z-index: 10;
+}
+
+.wd-z-index-highest {
+    z-index: 100;
+}
+
+.wd-float-left {
+    float: left;
+    height: 200px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-grid-col-half-page {
+    width: 50%;
+    float: left;
+}
+
+.wd-grid-col-third-page {
+    width: 33%;
+    float: left;
+ }
+ 
+ .wd-grid-col-two-thirds-page {
+    width: 67%;
+    float: left;
+ }
+ 
+ .wd-grid-col-left-sidebar {
+    width: 20%;
+    float: left;
+ }
+ 
+ .wd-grid-col-main-content {
+    width: 60%;
+    float: left;
+ }
+ 
+ .wd-grid-col-right-sidebar {
+    width: 20%;
+    float: left;
+ }
+ 
+ .wd-flex-row-container {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .wd-flex-grow-1 {
+     flex-grow: 1;
+ }
+
+ .wd-width-75 {
+     width: 75px;
+ }

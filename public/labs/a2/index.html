@@ -1,0 +1,665 @@
+<html>
+    <head>
+        <style>
+            p {
+                background-color: green;
+                color: white;
+            }
+        </style>
+        <link href='index.css' rel='stylesheet'>
+        <link href="../../libs/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../../libs/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>Lab 2 - CSS/Bootstrap</h1>
+        <a href='../../'>Back Home</a>
+        <ol>
+            <li>
+                <div>
+                    <p style='background-color:blue; color: white;'>Some paragraph to be styled. 
+                        This will only affect this specific element since we're using inline style. The default style for 
+                        a paragraph is green background with white text
+                    </p>
+                    <p>For example, this paragraph is not styled and uses the default; green background with white text.</p>
+                    <p id='id-selector1'>This paragraph is using the index.css file to style it. Its id is id-selector1.</p>
+                    <p id='id-selector2'>This paragraph is using the index.css file to style it. Its id is id-selector2.</p>
+                    <p class='class-basic-p'>This an the next paragraph both have the same class - which means they will both use the same style.</p>
+                    <p class='class-basic-p'>This paragraph has the same style as the previous one, because it uses the same class.</p>
+                </div>
+            </li>
+            <li>
+                <div class='wd-selector1'>
+                    <h3>This is a nested css structure (wd-selector1).</h3>
+                    <div class='wd-selector2'>
+                        <h4>This is nested within wd-selector1.</h4>
+                        <p class='wd-selector3'>
+                            This is a paragraph with the class wd-selector3, nested within wd-selector1 and wd-selector2.
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3 class='wd-foreground-color-blue'>Colors within text.</h3>
+                    <p class='wd-foreground-color-red'>
+                        This text is red,
+                        <span class='wd-foreground-color-green'>but this text is green.</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3 class='wd-bg-color-blue'>Background colors of text.</h3>
+                    <p class='wd-bg-color-red'> 
+                        This background is red...
+                        <span class='wd-bg-color-green'>But this text is green.</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3 class='wd-border-fat wd-border-solid'>Borders</h3>
+                    <h3 class='wd-border-fat wd-border-solid wd-border-red'>Thick red border</h3>
+                    <h3 class='wd-border-thin wd-border-dashed'>Thin dashed border</h3>
+                    <h3 class='wd-border-thin wd-border-solid wd-border-red'>Thin red solid border</h3>
+                    <h3 class='wd-border-fat wd-border-dashed wd-border-green'>Thick green dashed border</h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Padding and Margins</h3>
+                    <div class='wd-background-gray wd-padding-large-top'>
+                        Large top padding.
+                    </div>
+                    <div class='wd-background-lightblue wd-padding-large-bottom'>
+                        Large bottom padding.
+                    </div>
+                    <div class='wd-background-gray wd-padding-large-bottom wd-padding-large-top wd-padding-large-left wd-padding-large-right'>
+                        Large padding all around
+                    </div>
+                    <div class='wd-background-lightblue wd-margin-large-top'>
+                        Large margin on the top. Note this does not affect the size of the element itself.
+                    </div>
+                    <div class='wd-background-lightblue wd-margin-large-left wd-margin-small-top'>
+                        Large margin on the left. Note this does not affect the size of the element itself.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>Rounded Corners</h3>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-top-left wd-margin-small-top'>
+                    Rounded top left border.
+                </div>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-top-right wd-margin-small-top'>
+                    Rounded top right border.
+                </div>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-bottom-left wd-margin-small-top'>
+                    Rounded bottom left border.
+                </div>
+                <div class='wd-border-solid wd-border-thin wd-border-curved-bottom-right wd-margin-small-top'>
+                    Rounded bottom right border.
+                </div>
+            </li>
+            <li>
+                <h3>
+                    Styling dimensions.
+                </h3>
+                <div class='wd-portrait wd-background-gray'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-lightblue'>
+                    This div is landscape.
+                </div>
+                <div class='wd-square wd-background-gray'>
+                    This div is square.
+                </div>
+            </li>
+            <li>
+                <h3>Styling positions</h3>
+                <div class='wd-portrait wd-background-gray'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-lightblue wd-nudge-up-right'>
+                    This div is landscape, moved up and to the right (relative).
+                </div>
+                <div class='wd-square wd-background-gray wd-nudge-down-right'>
+                    This div is square, moved down and to the right (relative).
+                </div>
+                <div class='wd-portrait wd-background-lightblue wd-margin-large-top'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-gray wd-absolute-50-50'>
+                    This div is landscape, moved to an absolute position.
+                </div>
+                <div class='wd-square wd-background-lightblue wd-absolute-100-100'>
+                    This div is square, moved to an absolute position.
+                </div>
+            </li>
+            <li>
+                <h3>Styling z indices</h3>
+                <div class='wd-portrait wd-background-gray wd-z-index-lowest'>
+                    This div is portrait.
+                </div>
+                <div class='wd-landscape wd-background-lightblue wd-absolute-75-75  wd-z-index-lowest'>
+                    This div is landscape, moved to some position - layered on the bottom.
+                </div>
+                <div class='wd-square wd-background-gray wd-absolute-150-150 wd-z-index-highest'>
+                    This div is square, moved to some posotion - layered on the top.
+                </div>
+            </li>
+            <li>
+                <div style='display: inline-block;'>
+                    <h3>Floating Content</h3>
+                    <div class='wd-float-left wd-background-gray'>
+                        Floating Block 1
+                    </div>
+                    <div class='wd-float-left wd-background-lightblue'>
+                        Floating Block 2
+                    </div>
+                    <div class='wd-float-left wd-background-gray'>
+                        Floating Block 3
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Grid Layout</h3>
+                    <div class='wd-grid-row'>
+                        <div class='wd-grid-col-half-page wd-bg-color-blue'>
+                            <h4>Left Side</h4>
+                        </div>
+                        <div class='wd-grid-col-half-page wd-bg-color-green'>
+                            <h4>Right Side</h4>
+                        </div>
+                    </div>
+                    <div class='wd-grid-row'>
+                        <div class='wd-grid-col-third-page wd-background-gray'>
+                            <h4>Left Third</h4>
+                        </div>
+                        <div class='wd-grid-col-two-thirds-page wd-background-lightblue'>
+                            <h4>Right Two Thirds</h4>
+                        </div>
+                    </div>
+                    <div class='wd-grid-row'>
+                        <div class='wd-grid-col-left-sidebar wd-bg-color-red'>
+                            <h4>Left Sidebar</h4>
+                        </div>
+                        <div class='wd-grid-col-main-content wd-bg-color-green'>
+                            <h4>Main Content</h4>
+                        </div>
+                        <div class='wd-grid-col-right-sidebar wd-bg-color-blue'>
+                            <h4>Right Sidebar</h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Flex</h3>
+                    <div class='wd-flex-row-container'>
+                        <div class='wd-bg-color-blue'>Column 1</div>
+                        <div class='wd-bg-color-green'>Column 2</div>
+                        <div class='wd-bg-color-red'>Column 3</div>
+                    </div>
+                    <br>
+                    <div class='wd-flex-row-container'>
+                        <div class='wd-bg-color-blue'>Column 1</div>
+                        <div class='wd-bg-color-green'>Column 2</div>
+                        <div class='wd-bg-color-red wd-flex-grow-1'>Column 3</div>
+                    </div>
+                    <br>
+                    <div class='wd-flex-row-container'>
+                        <div class='wd-bg-color-blue wd-width-75'>Column 1</div>
+                        <div class='wd-bg-color-green'>Column 2</div>
+                        <div class='wd-bg-color-red wd-flex-grow-1'>Column 3</div>
+                    </div>
+                </div>
+            </li>
+            <h2>Bootstrap</h2>
+            <li>
+                <div>
+                    <h3>Containers</h3>
+                    <div class='container'>
+                        <h3>Welcome to Boostrap!</h3>
+                        <div class='row'>
+                            <div class='col bg-danger text-white'>
+                                <h4>Left Half</h4>
+                            </div>
+                            <div class='col bg-primary text-white'>
+                                <h4>Right Half</h4>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-4 bg-warning'>
+                                <h4>One Third</h4>
+                            </div>
+                            <div class='col-8 bg-success text-white'>
+                                <h4>Two Thirds</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 bg-dark text-white">
+                               <h3>Sidebar</h3>
+                            </div>
+                            <div class="col-8 bg-secondary text-white">
+                               <h3>Main content</h3>
+                            </div>
+                            <div class="col-2 bg-info">
+                               <h3>Sidebar</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Responsive Grids</h3>
+                    <div class='container'>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-3 bg-warning">
+                                <h3>Column A</h3>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3 bg-primary text-white">
+                                <h3>Column B</h3>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3 bg-danger text-white">
+                                <h3>Column C</h3>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3 bg-success text-white">
+                                <h3>Column D</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+                                <h4>1</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+                                <h4>2</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+                                <h4>3</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+                                <h4>4</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+                                <h4>5</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+                                <h4>6</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+                                <h4>7</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+                                <h4>8</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning">
+                                <h4>9</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary text-white">
+                                <h4>10</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger text-white">
+                                <h4>11</h4>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-success text-white">
+                                <h4>12</h4>
+                            </div>
+                        </div>
+                        <div class="d-block d-sm-none fa-2x">XS</div>
+                        <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+                        <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+                        <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+                        <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+                        <div class="d-none d-xxl-block fa-2x">XXL</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Tables and Lists</h3>
+                    <div>
+                        <table class='table'>
+                            <thead>
+                                <tr class='table-dark'>
+                                    <th>Quiz</th>
+                                    <th>Topic</th>
+                                    <th>Date</th>
+                                    <th>Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class='table-warning'>
+                                    <td>Q1</td>
+                                    <td>HTML</td>
+                                    <td>2/3/21</td>
+                                    <td>85</td>
+                                </tr>
+                                <tr class='table-danger'>
+                                    <td>Q2</td>
+                                    <td>CSS</td>
+                                    <td>2/10/21</td>
+                                    <td>92</td>
+                                </tr>
+                                <tr class='table-primary'>
+                                    <td>Q3</td>
+                                    <td>JavaScript</td>
+                                    <td>2/17/21</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr class='table-success'>
+                                    <td colspan="3">Average</td>
+                                    <td><script>document.write((85+92+90) / 3)</script></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Responsive Tables</h3>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Very</th>
+                                    <th>long</th>
+                                    <th>set</th>
+                                    <th>of</th>
+                                    <th>columns</th>
+                                    <th>Very</th>
+                                    <th>long</th>
+                                    <th>set</th>
+                                    <th>of</th>
+                                    <th>columns</th>
+                                    <th>Very</th>
+                                    <th>long</th>
+                                    <th>set</th>
+                                    <th>of</th>
+                                    <th>columns</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Very</th>
+                                    <th>long</th>
+                                    <th>set</th>
+                                    <th>of</th>
+                                    <th>columns</th>
+                                    <th>Very</th>
+                                    <th>long</th>
+                                    <th>set</th>
+                                    <th>of</th>
+                                    <th>columns</th>
+                                    <th>Very</th>
+                                    <th>long</th>
+                                    <th>set</th>
+                                    <th>of</th>
+                                    <th>columns</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Styling Lists</h3>
+                    <ul class='list-group'>
+                        <li class='list-group-item acive'>Bills</li>
+                        <li class='list-group-item'>Jets</li>
+                        <li class='list-group-item'>Cowboys</li>
+                        <li class='list-group-item'>Ravens</li>
+                        <li class='list-group-item disabled'>Lions</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="list-group">
+                        <a href="https://en.wikipedia.org/wiki/Dune_(novel)" class="list-group-item list-group-item-action active">
+                             Dune</a>
+                         <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="list-group-item list-group-item-action">
+                             Lord of the Rings</a>
+                         <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+                             The Forever War</a>
+                         <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)" class="list-group-item list-group-item-action">
+                             2001 A Space Odyssey</a>
+                         <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ender's Game</a>
+                      </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Styling Forms</h3>
+                    <div class='mb-3'>
+                        <label for='input1' class='form-label'>Email Address</label>
+                        <input type='emial' class='form-control' id='input1' placeholder="email@email.com">
+                    </div>
+                    <div class='mb-3'>
+                        <label for='textarea1' class='form-label'>Example Textarea</label>
+                        <textarea type='emial' class='form-control' id='textarea1' rows='3'></textarea>
+                    </div>
+                    <div>
+                        <h4>Dropdowns</h4>
+                        <select class='form-select'>
+                            <option selected>Choose an option</option>
+                            <option value='1'>One</option>
+                            <option value='2'>Two</option>
+                            <option value='3'>Three</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h4>Switches</h4>
+                        <div class='form-check form-switch'>
+                            <input class='form-check-input' type='checkbox' id='switch1'>
+                            <label class='form-check-label'>Default switch checkbox input</label>
+                        </div>
+                        <div class='form-check form-switch'>
+                            <input class='form-check-input' type='checkbox' id='switch2' checked>
+                            <label class='form-check-label'>Checked switch checkbox input</label>
+                        </div>
+                        <div class='form-check form-switch'>
+                            <input class='form-check-input' type='checkbox' id='switch3' disabled>
+                            <label class='form-check-label'>Disabled switch checkbox input</label>
+                        </div>
+                        <div class='form-check form-switch'>
+                            <input class='form-check-input' type='checkbox' id='switch4' disabled checked>
+                            <label class='form-check-label'>Disabled checked switch checkbox input</label>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Sliders</h4>
+                        <div>
+                            <label for='range1' class='form-label'>Example range</label>
+                            <input type='range' class='form-range' min='0' max='10' step='0.1' id='range1'>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Addons</h4>
+                        <div class='input-group mb-3'>
+                            <span class='input-group-text'>$</span>
+                            <span class='input-group-text'>0.00</span>
+                            <input type='text' class='form-control'>
+                        </div>
+                        <div class='input-group mb-3'>
+                            <input type='text' class='form-control'>
+                            <span class='input-group-text'>$</span>
+                            <span class='input-group-text'>0.00</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Responsive Forms</h4>
+                        <div class='mb-3 row'>
+                            <label for='email1' class='col-sm-2 col-form-label'>Email</label>
+                            <div class='col-sm-10'>
+                                <input type='text' class='form-control' id='email1' placeholder='email@email.com'>
+                            </div>
+                        </div>
+                        <div class='mb-3 row'>
+                            <label for='password1' class='col-sm-2 col-form-label'>Password</label>
+                            <div class='col-sm-10'>
+                                <input type='password' class='form-control' id='password1'>
+                            </div>
+                        </div>
+                        <div class='mb-3 row'>
+                            <label for='textarea2' class='col-sm-2 col-form-label'>Bio</label>
+                            <div class='col-sm-10'>
+                                <textarea class='form-control' id='textarea2' rows='3'></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>More Responsive Forms</h4>
+                            <form>
+                                <div class='row mb-3'>
+                                    <label for='r1' class='col-sm-2 col-form-label'>Email</label>
+                                    <div class='col-sm-10'>
+                                        <input type='text' class='form-control' id='r1' placeholder='email@email.com'>
+                                    </div>
+                                </div>
+                                <div class='mb-3 row'>
+                                    <label for='p1' class='col-sm-2 col-form-label'>Password</label>
+                                    <div class='col-sm-10'>
+                                        <input type='password' class='form-control' id='p1'>
+                                    </div>
+                                </div>
+                                <fieldset class='row mb-3'>
+                                    <legend class='col-form-label col-sm-2 pt-0'>
+                                        Radios
+                                    </legend>
+                                    <div class='col-sm-10'>
+                                        <div class='form-check'>
+                                            <input class='form-check-input' type='radio' name='gridRadios' id='r3' value='option1' checked>
+                                            <label class='form-check-label' for='r3'>First radio</label>
+                                        </div>
+                                        <div class='form-check'>
+                                            <input class='form-check-input' type='radio' name='gridRadios' id='r4' value='option2'>
+                                            <label class='form-check-label' for='r4'>Second radio</label>
+                                        </div>
+                                        <div class='form-check disabled'>
+                                            <input class='form-check-input' type='radio' name='gridRadios' id='r5' value='option3' disabled>
+                                            <label class='form-check-label' for='r5'>Third radio</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class='row mb-3'>
+                                        <div class='col-sm-10 offset-sm-2'>
+                                            <div class='form-check'>
+                                                <input class='form-check-input' type='checkbox' for='r6'>
+                                                <label class='form-check-label' id='r6'>Example checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <button type='submit' class='btn btn-primary'>Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Tabs</h3>
+                    <div>
+                        <ul class='nav nav-tabs'>
+                            <li class='nav-item'>
+                                <a class='nav-link active' href=''>Active</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a class='nav-link' href=''>Link</a>
+                            </li>
+                            <li class='nav=item'>
+                                <a class='nav-link' href=''>Link</a>
+                            </li>
+                            <li class='nav=item disabled'>
+                                <a class='nav-link disabled' href='' tabindex='-1'>Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Cards</h3>
+                    <div class='card' style='width: 18rem'>
+                        <img src='../../logo192.png' class='card-img-top' alt='...'>
+                        <div class='card-body'>
+                            <h4 class='card-title'>Card Title</h4>
+                            <p class='card-text' style='background-color: white; color:black'>
+                                Example Text....
+                            </p>
+                            <a href='' class='btn btn-primary'>Go Somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>Icons</h3>
+                    <i class="fa fa-cog"></i><i class="fa fa-heart"></i>
+                    <i class="fa fa-share"></i>
+                    <i class="fa fa-comment"></i> <br>
+                    <i class="fa fa-image"></i>
+                    <i class="fa fa-bar-chart"></i>
+                    <i class="fa fa-calendar"></i>
+                    <i class="fa fa-smile-o"></i>
+                    <h3>Resizing Icons</h3>
+                    <i class="fa fa-cog fa-2x"></i>
+                    <i class="fa fa-heart fa-2x"></i>
+                    <i class="fa fa-share fa-3x"></i>
+                    <i class="fa fa-comment fa-3x"></i><br/>
+                    <i class="fa fa-image fa-3x"></i>
+                    <i class="fa fa-bar-chart fa-4x"></i>
+                    <i class="fa fa-calendar" style="font-size: 5em"></i>
+                    <i class="fa fa-smile-o" style="font-size: 3.5em"></i>
+                    <h3>Coloring Items</h3>
+                    <i class="fa fa-cog fa-2x" style="color: tomato"></i>
+                    <i class="fa fa-heart fa-2x" style="color: tomato"></i>
+                    <i class="fa fa-share fa-3x" style="color: #5ec15b"></i><br/>
+                    <i class="fa fa-comment fa-3x" style="color: #19d49e"></i>
+                    <i class="fa fa-image fa-3x" style="color: rgb(234,123,12)"></i>
+                    <i class="fa fa-bar-chart fa-4x" style="color: rgb(123,234,123)"></i>
+                    <h3>Brand Items</h3>
+                    <i class="fa fa-twitter fa-2x"></i><br/>
+                    <i class="fa fa-facebook fa-2x"></i><br/>
+                    <i class="fa fa-apple fa-2x"></i><br/>
+                    <h3>Stacking Items</h3>
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span><br/>
+                        <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+                        </span><br/>
+                        <span class="fa-stack fa-2x">
+                        <i class="fa fa-camera fa-stack-1x"></i>
+                        <i class="fa fa-ban fa-stack-2x" style="color:Tomato"></i>
+                    </span><br/>
+                    <h3>Rotating Icons</h3>
+                    <h4>(Note: Snowboard icon not supported for version 4)</h4>
+                    <div class="fa-4x">
+                        <i class="fa fa-bus"></i>
+                        <i class="fa fa-bus fa-rotate-90"></i>
+                        <i class="fa fa-bus fa-rotate-180"></i><br/>
+                        <i class="fa fa-bus fa-rotate-270"></i>
+                        <i class="fa fa-bus fa-flip-horizontal"></i>
+                        <i class="fa fa-bus fa-flip-vertical"></i><br/>
+                        <i class="fa fa-bus fa-flip-both"></i><br/>
+                    </div>
+                    <h3>Animating Icons</h3>
+                    <div class="fa-3x">
+                        <i class="fa fa-spinner fa-spin"></i>
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+                        <i class="fa fa-refresh fa-spin"></i><br/>
+                        <i class="fa fa-cog fa-spin"></i>
+                        <i class="fa fa-spinner fa-pulse"></i>
+                        <i class="fa fa-snowflake-o fa-spin"></i>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
