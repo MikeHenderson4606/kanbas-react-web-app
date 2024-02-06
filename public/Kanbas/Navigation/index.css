@@ -31,3 +31,9 @@
     font-size: 2em;
     margin-bottom: 5px;
 }
+
+.wd-top-navbar {
+    width: 100%;
+    background-color: black;
+    padding: 5px;
+}
