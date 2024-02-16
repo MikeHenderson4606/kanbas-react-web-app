@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import Labs from './Labs';
-<<<<<<< HEAD
 import HelloWorld from './Labs/a3/HelloWorld';
 import Kanbas from './Kanbas';
 import {HashRouter} from 'react-router-dom'
@@ -21,30 +20,6 @@ function App() {
         </Routes>
       </div>
     </ HashRouter>
-=======
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-function App() {
-  const someFunction = (b: number) => b*b;
-
-  return (
-    <>
-      <h1>
-        Labs
-      </h1>
-      <Labs />
-      <h1>
-        Kanbas
-      </h1>
-      <ul>
-        <li>
-          <a href='/Kanbas/Dashboard/screen.html'>
-            Kanbas
-          </a>
-        </li>
-      </ul>
-    </>
->>>>>>> a3
   );
 }
 
