@@ -4,10 +4,6 @@ import Nav from '../Nav';
 
 function Labs() {
 
-    const updatedLabs = [
-        <Assignment3 />
-    ];
-
     return (
     <div>
         <Nav />
