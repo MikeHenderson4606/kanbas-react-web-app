@@ -1,0 +1,8 @@
+.wd-module-button-container {
+    margin-bottom: 10px;
+}
+
+.wd-module-button-container > button {
+    margin-right: 2px;
+    border-radius: 3px;
+}

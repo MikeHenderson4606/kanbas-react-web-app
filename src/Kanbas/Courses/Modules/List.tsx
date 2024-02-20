@@ -3,6 +3,7 @@ import "./index.css";
 import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
 import { useParams } from "react-router";
+import './index.css';
 
 
 function ModuleList() {
@@ -11,7 +12,12 @@ function ModuleList() {
     const [selectedModule, setSelectedModule] = useState(modulesList[0]);
     return (
         <>
-        {/* <!-- Add buttons here --> */}
+        <div className="wd-module-button-container">
+            <button className="btn btn-danger">Collapse All</button>
+            <button className="btn btn-danger">View Progress</button>
+            <button className="btn btn-danger">Publish All</button>
+            <button className="btn btn-danger">+ Module</button>
+        </div>
         <ul className="list-group wd-modules">
             {modulesList.map((module:any, index:any) => (
             <li key={index}
