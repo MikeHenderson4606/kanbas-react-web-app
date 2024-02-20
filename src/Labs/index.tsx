@@ -8,7 +8,8 @@ function Labs() {
     return (
     <div>
         <Nav />
-        <Link to="/Labs/a3">Assignment 3</Link> | 
+        <h1>Labs</h1>
+        <Link to="/Labs/a3">Assignment 3</Link> | <span> </span>
         <Link to="/Labs/a4">Assignment 4</Link>
         <Routes>
             <Route path="/a3/*" element={<Assignment3 />} />
