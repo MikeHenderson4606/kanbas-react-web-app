@@ -6,6 +6,10 @@ import Counter from "./Counter";
 import BooleanStateVariables from "./BooleanStateVariables";
 import StringStateVariables from "./StringStateVariables";
 import DateStateVariable from "./DateStateVariables";
+import ObjectStateVariable from "./ObjectStateVariables";
+import ArrayStateVariable from "./ArrayStateVariable";
+import ParentStateComponent from "./ParentStateComponent";
+import ReduxExamples from "./ReduxExamples.tsx";
 
 function Assignment4() {
     function hello() {
@@ -15,6 +19,7 @@ function Assignment4() {
     return (
         <div>
             <h2>Assignment 4</h2>
+            <ReduxExamples />
             <ClickEvent />
             <PassingDataOnEvent />
             <PassingFunctions theFunction={hello} />
@@ -23,6 +28,9 @@ function Assignment4() {
             <BooleanStateVariables />
             <StringStateVariables />
             <DateStateVariable />
+            <ObjectStateVariable />
+            <ArrayStateVariable />
+            <ParentStateComponent />
         </div>
     );
 }
