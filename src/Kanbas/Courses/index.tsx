@@ -13,8 +13,11 @@ function Courses() {
     const course = courses.find((course) => course._id === courseId);
     return (
         <div>
-        <h1><HiMiniBars3 /> Course {course?.name}</h1>
-        <CourseNavigation />
+            <h1>
+                <span className="d-sm-inline d-md-none">
+                    <HiMiniBars3 /> 
+                </span>Course {course?.name}</h1>
+            <CourseNavigation />
             <div>
                 <div
                 className="overflow-y-scroll position-fixed bottom-0 end-0"

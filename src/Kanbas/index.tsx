@@ -12,7 +12,7 @@ function Kanbas() {
             <Nav />
             <div className="d-flex">
                 <KanbasNavigation />
-                <div style={{ flexGrow: 1 }}>
+                <div>
                     <Routes>
                         <Route path="/" element={<Navigate to="Dashboard" />} />
                         <Route path="Account" element={<h1>Account</h1>} />
