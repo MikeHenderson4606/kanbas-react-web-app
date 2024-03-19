@@ -3,8 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ArrayStateVariable() {
     const [array, setArray] = useState([1, 2, 3, 4, 5]);
-    const addElement = () => {
+    const addElement = (something:any) => {
         setArray([...array, Math.floor(Math.random() * 100)]);
+        something = 1;
     };
     const deleteElement = (index: number) => {
         setArray(array.filter((item, i) => i !== index));
